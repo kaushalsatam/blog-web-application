@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<% if (!allBlogPosts || allBlogPosts.length === 0) { %>
+    <div class="home-container">
+        <h1>No blog posts available...</h1>
+        <form action="/makePost" method="get">
+            <button class="get-started button">Get Started 🠚</button>
+        </form>
+    </div>
+    <% } else { %>
+        <div class="view-post">
+    <% allBlogPosts.forEach((post) => { %>
+        <% if (post && post["post-content"]) { %>
+            <div class="post" data-postid="<%= post.id %>">
+                <h2><%= post["title"] %></h2>
+                <h1><%= post["topic"] %></h1>
+                <p><%= post["post-content"] %></p>
+                <form action="/edit/<%= post.id %>" method="get">
+                    <button type="submit" class="button">Edit ✏️</button>
+                </form>
+                <form action="/deletePost/<%= post.id %>" method="post">
+                    <button type="submit" class="button">Delete 🗑️</button>
+                </form>
+            </div>
+        <% } %>
+    <% }); %>
+</div>
+<% } %>
+
+<%- include("partials/footer.ejs") %>

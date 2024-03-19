@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<% if(locals.postContent){ %>
+<div class="post">
+  <h1><%= locals.title %></h1>
+  <h2><%= locals.topic %></h2>
+  <p><%= locals.postContent %></p>
+</div>
+<% } else { %>
+<div class="home-container">
+  <h1>Welcome to Bloggin</h1>
+  <h2>A blog web application</h2>
+  <form action="/makePost" method="get">
+    <button class="get-started button">Get Started 🠚</button>
+  </form>
+</div>
+<% } %> <%- include("partials/footer.ejs") %>

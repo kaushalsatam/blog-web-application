@@ -1,0 +1,11 @@
+Done working with making post
+
+to-do:
+1. View posts - Done
+2. Update posts - Done
+3. Delete posts - Done
+4. Styling adjustments
+
+Extras:
+1. Contact Page
+2. About Page
