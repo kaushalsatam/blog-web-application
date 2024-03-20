@@ -2,16 +2,19 @@
 
 <div>
   <form action="/submit" method="post">
+    <h1>Create your blog post...</h1>
     <label for="topic">Topic</label>
-    <input type="text" name="topic" id="topic" class="input-fields" />
+    <input type="text" name="topic" id="topic" class="input-fields" placeholder="Enter your blog post topic."/>
     <label for="title">Title</label>
-    <input type="text" name="title" id="title" class="input-fields" />
+    <input type="text" name="title" id="title" class="input-fields" placeholder="Enter your blog post title."/>
     <label for="post-content">Content</label>
     <textarea
       name="post-content"
       id="post-content"
-      cols="30"
+      cols="75"
       rows="10"
+      placeholder="Enter contents of your blog post."
+      class="input-fields"
     ></textarea>
     <input type="submit" value="Submit" class="button" />
   </form>

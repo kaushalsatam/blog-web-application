@@ -4,7 +4,7 @@ to-do:
 1. View posts - Done
 2. Update posts - Done
 3. Delete posts - Done
-4. Styling adjustments
+4. Styling adjustments - Done
 
 Extras:
 1. Contact Page

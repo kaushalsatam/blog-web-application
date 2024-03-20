@@ -80,10 +80,12 @@ form{
 
 .input-fields{
     width: 100%;
+    padding: 10px;
 }
 
 .post{
-    border: 5px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border: 5px solid gray; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -120,11 +122,22 @@ form{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
+    justify-content: center;
 }
 
 .no-posts{
     align-self: center;
+}
+
+.post-button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-buttons{
+    display: inline;
 }
 
 /* Footer */

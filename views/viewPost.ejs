@@ -15,12 +15,14 @@
                 <h2><%= post["title"] %></h2>
                 <h1><%= post["topic"] %></h1>
                 <p><%= post["post-content"] %></p>
-                <form action="/edit/<%= post.id %>" method="get">
-                    <button type="submit" class="button">Edit ✏️</button>
-                </form>
-                <form action="/deletePost/<%= post.id %>" method="post">
-                    <button type="submit" class="button">Delete 🗑️</button>
-                </form>
+                <div class="post-button-container">
+                    <form action="/edit/<%= post.id %>" method="get" class="post-buttons">
+                        <button type="submit" class="button">Edit ✏️</button>
+                    </form>
+                    <form action="/deletePost/<%= post.id %>" method="post" class="post-buttons">
+                        <button type="submit" class="button">Delete 🗑️</button>
+                    </form>
+                </div>
             </div>
         <% } %>
     <% }); %>
